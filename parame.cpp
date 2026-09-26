@@ -1,21 +1,27 @@
 #include <iostream>
-#include <cstdlib> // Necesario para usar system("cls")
-
 using namespace std;
 
-// Gerardo Guillermo De jesus Sarmiento hernandez 
-// 4/09/2026
-// calculadora
 
-int main() {
-    float n1, n2;
+int menu();
+void operaciones(int op);
+
+
+
+int main(){
+    int opcion;
+
+    opcion = menu();
+   
+    operaciones(opcion);
+
+
+    return 0;
+    
+}
+
+int menu(){
     int op;
-    
-    do {
-        system("cls"); 
-    
-       
-        cout << "Opciones" << endl;
+    cout << "Opciones" << endl;
         cout << "1: Suma" << endl;
         cout << "2: Resta" << endl;
         cout << "3: Multiplicacion" << endl;
@@ -23,8 +29,12 @@ int main() {
         cout << "5: Salir" << endl;
         cout << "Opcion: ";
         cin >> op;
-        
-        switch (op) {
+        return op;
+}
+
+void operaciones(int op){
+    float n1 = 0, n2 = 0;
+    switch (op) {
             case 1: {
                 cout << "Ingresa #1: ";
                 cin >> n1;
@@ -70,12 +80,4 @@ int main() {
                 break;
             }
         }   
-
-        
-        if (op !=5) {
-            system("pause");
-        }
-
-    } while (op != 5); 
-    return 0;
 }

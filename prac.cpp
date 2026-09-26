@@ -1,11 +1,9 @@
 #include <iostream>
-#include <cstdlib> // Necesario para usar system("cls") y system("pause")
+#include <cstdlib> 
 
 using namespace std;
 
-// Gerardo Guillermo De jesus Sarmiento hernandez
-// 4/09/2026
-// calculadora
+
 
 int main() {
     int op = 0; 

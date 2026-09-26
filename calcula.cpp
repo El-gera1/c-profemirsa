@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
-//Gerardo Guillermo De jesus Sarmiento hernandez 
-//4/09/2026
-//calculadora
+
 int main() {
-    float n1, n2; //declarar variables
+    float n1, n2; 
     int op;
- //pones las opciones
+
     cout << "Opciones" << endl;
     cout << "1: Suma" << endl;
     cout << "2: Resta" << endl;
