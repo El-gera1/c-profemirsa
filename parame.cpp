@@ -1,11 +1,8 @@
 #include <iostream>
 using namespace std;
 
-
 int menu();
 void operaciones(int op);
-
-
 
 int main(){
     int opcion;
